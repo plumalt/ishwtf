@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>wtf.zxc</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Overlay -->
+  <div id="overlay">
+    <p>CLICK ANYWHERE TO VIEW</p>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <img src="https://i.ibb.co/d45BkwsN/d0154f77cad85ed6a9bfbdf782847ebd.jpg" alt="Avatar" class="avatar" />
+    <h1 id="typewriter"></h1>
+
+    <div class="links-bio-wrapper">
+      <div class="links">
+        <a href="https://discord.com/users/732482133716762666" target="_blank" class="link">
+          <img src="https://i.ibb.co/DgbJm1L7/image.png" alt="Discord" class="icon" />
+          Discord
+        </a>
+        <a href="https://open.spotify.com/user/3132qgmx7mvtxanmykijv7cnvnla?si=a5ebc4484e3347ef&nd=1&dlsi=3e7eb3761c4446f6" target="_blank" class="link">
+          <img src="https://i.ibb.co/DP0QJC60/image.png" alt="Spotify" class="icon" />
+          Spotify
+        </a>
+      </div>
+      <p class="bio">not much ???</p>
+    </div>
+
+    <!-- Footer quote -->
+    <p class="footer-quote">† ᴏʜ ʟᴏʀᴅ ʜᴇʟᴘ ᴜꜱ †</p>
+  </div>
+
+  <!-- Anti-inspect script -->
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Block F12, Ctrl+Shift+I/J/C, Ctrl+U
+    document.addEventListener('keydown', e => {
+      if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) ||
+        (e.ctrlKey && e.key.toUpperCase() === 'U')
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+
+</body>
+</html>
